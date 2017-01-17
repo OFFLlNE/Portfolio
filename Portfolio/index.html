@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+  <div class="panel" style="display: block;">
+  <h1 style="text-align:center;">Hello</h1>
+  <h2>I am OFFLlNE</h2>  
+</div>
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<!-- particles.js container -->
+<div id="particles-js"></div>
+</div>
+  <h1>New Page will come here</h1>
+</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1 class="text-danger">Hello, world!</h1>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Scripts -->
+    <script src="../particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lib/stats.js"></script>
+    <script>
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
