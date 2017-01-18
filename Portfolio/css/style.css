@@ -4,6 +4,7 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif; 
 } 
 
+
 canvas{
   display:block;
   vertical-align: bottom; 
@@ -12,7 +13,7 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  background-color: #191919;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,12 +61,39 @@ canvas{
     z-index: 10;
     width: 200px;
     height: 220px;
-    background: #eee;
+    background: #DFE2DB;
     top: 50%;
     left: 50%;
     margin: -110px 0 0 -100px;
-    padding: 20px;
     border-radius: 4px;
     box-sizing: border-box;
     z-index: 100;
+    text-align:center;
+	color:#191919;
+	opacity: 1;
+	display: block;
+}
+
+h1{
+	font-size: 50px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .panel {
+        top:30%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .panel {
+        top:20%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .panel {
+    	height: 150px;
+    	overflow:hidden;
+    }
 }
