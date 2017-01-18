@@ -20,9 +20,8 @@ background/white:#FFFFFF;
 */
 /* ---- particles.js container ---- */ 
 #particles-js{
-  position:absolute;
-  width: 100%;
-  height: 100%;
+  height:100vh;
+  width: 100vw;
   background-color: #191919;
   background-image: url("");
   background-repeat: no-repeat;
@@ -52,7 +51,7 @@ background/white:#FFFFFF;
 
 #stats, .count-particles{
   -webkit-user-select: none;
-  margin-top: 5px;
+  margin-top: 55px;
   margin-left: 5px; 
 }
 
@@ -69,7 +68,6 @@ background/white:#FFFFFF;
     font-family: 'Source Sans Pro';
     font-size: 1.3em;
     position: absolute;
-    z-index: 10;
     width: 200px;
     height: 220px;
     background: #DFE2DB;
@@ -87,10 +85,7 @@ background/white:#FFFFFF;
 }
 
 .testPage{
-	color:red;
-	position: relative;
-	float:left;
-	margin-top: 10px;
+	color:black;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
