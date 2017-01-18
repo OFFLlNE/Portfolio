@@ -9,6 +9,15 @@ canvas{
   display:block;
   vertical-align: bottom; 
 }
+
+/*My Main colors 
+dark: #191919;
+light:#DFE2DB;
+target:#660099;
+background/white:#FFFFFF;
+
+
+*/
 /* ---- particles.js container ---- */ 
 #particles-js{
   width: 100%;
