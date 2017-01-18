@@ -98,7 +98,7 @@ h1{
 	font-size: 50px;
 }
 
-@media only screen and (max-width: 1320px) {
+/*@media only screen and (max-width: 1320px) {
     .myPanel {
         top:40%;
     }
@@ -138,3 +138,4 @@ h1{
     	overflow:hidden;
     }
 }
+*/
