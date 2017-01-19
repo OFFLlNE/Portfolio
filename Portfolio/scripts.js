@@ -11,8 +11,6 @@ $(document).on("scroll", function() {
 
 $('#burgerToggle').click(function() {	
   $(this).toggleClass('expanded')
-  $('.mobileMenuItems').slideToggle();
-  $('.mobilemenuitem').css('display','block');
-  $('.mobileMenuItems').css('display','block');
+  $('.menuitem').toggleClass('notHidden')
   console.log("button is clicked");
 });

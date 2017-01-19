@@ -104,7 +104,7 @@ h1{
 	font-size: 50px;
 }
 
-#desktop{
+#menu{
 	position:fixed;
 	height: 50px;
 	width: 100%;
@@ -114,23 +114,18 @@ h1{
 	z-index: 101;
 }
 
-#mobile{
-	display:none;
-	position: fixed;
-	width: 100%;
-	background-color: rgba(34,34,34,0.5);
-}
 
 
 
 #burgerToggle{
+	display: none;
 	position:fixed;
 	top:15px;
 	right: 15px;
 	border: 0;
     text-indent: 200%;
     overflow: hidden;
-    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    background: rgba(255,255,255,.8) url(../images/burger_icon.png) center no-repeat;
     border: 1px solid #ddd;
     border-radius: 3px;
     background-size: 80%;
@@ -138,11 +133,12 @@ h1{
     height: 30px;
     outline: none;
     transition: all 400ms ease;
+
 }
 
 #burgerToggle.expanded{
-	transform: rotate(90deg);
-	background-color: transparent;
+	transform: rotate(-90deg);
+	background-color: rgba(255,255,255,.2);
     border: 0;
 }
 
@@ -156,23 +152,6 @@ h1{
 	text-decoration: none;
 }
 
-.mobilemenuitem{
-	display:none;
-	width: 100%;
-	text-align: center;
-	font-size: 30px;
-	color:#DFE2DB;
-	padding: 10px;
-	cursor: pointer;
-	text-decoration: none;
-
-}
-
-.mobilemenuitem:hover{
-	background-color: #191919;
-	color: #660099;
-}
-
 
 
 .menuitem:hover{
@@ -182,11 +161,26 @@ h1{
 }
 
 
+
 @media screen and (max-width: 580px) {
-    #mobile{
-    	display: block;
+	#menu{
+		background-color: rgba(34,34,34,0);
+	}
+	#burgerToggle{
+		display: block;
+	}
+    .hidden{
+    	display:block;
     }
-    #desktop{
-    	display: none;
+    .menuitem{
+    	display:none;
+    	width: 100%;
+		text-align: center;
     }
+    .notHidden{
+		display:block;
+		background-color: rgba(34,34,34,0.5);
+
+	}
+    
 }
