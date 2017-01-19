@@ -86,11 +86,13 @@ background/white:#FFFFFF;
 
 #about{
 	height: 100vh;
+	background-color: #DFE2DB;
+	margin-top: -20px;
 }
 
 .testPage{
 	color:black;
-	margin-top: 150px;
+	padding-top: 50px;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
