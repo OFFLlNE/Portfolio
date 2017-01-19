@@ -9,6 +9,11 @@ $(document).on("scroll", function() {
 });
 */
 
+
+
+
+
+
 $('#burgerToggle').click(function() {	
   $(this).toggleClass('expanded');
   $('.menuitem').toggleClass('notHidden');
