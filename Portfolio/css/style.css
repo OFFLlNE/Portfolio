@@ -87,7 +87,7 @@ background/white:#FFFFFF;
 #about, #portfolio, #contact{
 	height: 100vh;
 	background-color: #DFE2DB;
-	margin-top: -40px;
+	margin-top: -42px;
 }
 
 
@@ -99,19 +99,55 @@ background/white:#FFFFFF;
 
 
 
+
 h1{
 	font-size: 50px;
 }
 
-#menu{
+#desktop{
 	position:fixed;
 	height: 50px;
 	width: 100%;
 	text-align: right;
 	font-size: 30px;
-	border-color: #101010;
+	background-color: rgba(34,34,34,0.5);
 	z-index: 101;
 }
+
+#mobile{
+	display:none;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(34,34,34,0.5);
+}
+
+
+
+#burgerToggle{
+	position:fixed;
+	top:15px;
+	right: 15px;
+	border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+}
+
+#burgerToggle.expanded{
+	transform: rotate(90deg);
+	background-color: transparent;
+    border: 0;
+}
+
+
+
 .menuitem{
 	font-size: 30px;
 	color:#DFE2DB;
@@ -119,12 +155,38 @@ h1{
 	cursor: pointer;
 	text-decoration: none;
 }
+
+.mobilemenuitem{
+	display:none;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color:#DFE2DB;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+
+.mobilemenuitem:hover{
+	background-color: #191919;
+	color: #660099;
+}
+
+
+
 .menuitem:hover{
 	background-color: #191919;
 	color: #660099;
 	border-radius: 8px;
 }
 
-.menuitem:active{
-	color:black;
+
+@media screen and (max-width: 580px) {
+    #mobile{
+    	display: block;
+    }
+    #desktop{
+    	display: none;
+    }
 }
