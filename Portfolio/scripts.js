@@ -10,7 +10,12 @@ $(document).on("scroll", function() {
 */
 
 $('#burgerToggle').click(function() {	
-  $(this).toggleClass('expanded')
-  $('.menuitem').toggleClass('notHidden')
+  $(this).toggleClass('expanded');
+  $('.menuitem').toggleClass('notHidden');
   console.log("button is clicked");
 });
+
+$('.menuitem').click(function(){
+	$('#burgerToggle').removeClass('expanded');
+	$('.menuitem').removeClass('notHidden');
+})
