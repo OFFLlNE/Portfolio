@@ -84,25 +84,20 @@ background/white:#FFFFFF;
 	font-weight: bold;
 }
 
-#about{
+#about, #portfolio, #contact{
 	height: 100vh;
 	background-color: #DFE2DB;
-	margin-top: -20px;
+	margin-top: -40px;
 }
+
+
 
 .testPage{
 	color:black;
 	padding-top: 50px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-}
 
-.h4, .h5, .h6, h4, h5, h6 {
-    margin-top:20px;
-    margin-bottom: 10px;
-}
 
 h1{
 	font-size: 50px;
@@ -128,4 +123,8 @@ h1{
 	background-color: #191919;
 	color: #660099;
 	border-radius: 8px;
+}
+
+.menuitem:active{
+	color:black;
 }
