@@ -21,7 +21,7 @@ background/white:#FFFFFF;
 /* ---- particles.js container ---- */ 
 #particles-js{
   height:100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #191919;
   background-image: url("");
   background-repeat: no-repeat;
@@ -84,8 +84,13 @@ background/white:#FFFFFF;
 	font-weight: bold;
 }
 
+#about{
+	height: 100vh;
+}
+
 .testPage{
 	color:black;
+	margin-top: 150px;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
