@@ -203,6 +203,13 @@ width:100px;
   .paddedH{
   padding-top: 5px;
   font-size: 16px;
+  }
+  div.a, div.b, div.c, div.d ,div.e {
+    position:relative;
+    width:50px;
+  }
+  .smallLogo{
+    width: 50px;
   } 
     
 }
