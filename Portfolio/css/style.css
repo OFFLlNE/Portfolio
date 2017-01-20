@@ -162,33 +162,8 @@ h1{
 }
 
 
-
-@media screen and (max-width: 580px) {
-	#menu{
-		background-color: rgba(34,34,34,0);
-	}
-	#burgerToggle{
-		display: block;
-	}
-    .hidden{
-    	display:block;
-    }
-    .menuitem{
-    	display:none;
-    	width: 100%;
-		text-align: center;
-    }
-    .notHidden{
-		display:block;
-		background-color: rgba(34,34,34,0.5);
-
-	}
-    
-}
-
-
 .smallLogo{
-	width: 100px;
+  width: 100px;
 }
 
 div#contactContainer {
@@ -203,3 +178,33 @@ width:100px;
 .paddedH{
   padding-top: 50px;
 }
+
+
+
+@media screen and (max-width: 580px) {
+	#menu{
+		background-color: rgba(34,34,34,0);
+	}
+	#burgerToggle{
+		display: block;
+	}
+  .hidden{
+    display:block;
+  }
+  .menuitem{
+    display:none;
+    width: 100%;
+	text-align: center;
+  }
+  .notHidden{
+	display:block;
+	background-color: rgba(34,34,34,0.5);
+  }
+  .paddedH{
+  padding-top: 5px;
+  font-size: 16px;
+  } 
+    
+}
+
+
