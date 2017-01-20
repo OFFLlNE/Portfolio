@@ -192,10 +192,14 @@ h1{
 }
 
 div#contactContainer {
-  height:100vh;
+  height:80vh;
   width:100%;}
 
 div.a, div.b, div.c, div.d ,div.e {
 position:relative;
 width:100px;
+}
+
+.paddedH{
+  padding-top: 50px;
 }
