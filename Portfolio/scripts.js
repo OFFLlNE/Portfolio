@@ -14,7 +14,6 @@ $(document).ready(function() {
     animateDiv($('.c'));
     animateDiv($('.d'));
     animateDiv($('.e'));
-    animateDiv($('.f'));
 
 });
 
