@@ -20,7 +20,7 @@ $(document).ready(function() {
 function makeNewPosition($container) {
 
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $container.height() - 400;
+    var h = $container.height() - 500;
     var w = $container.width() - 150;
 
     var nh = Math.floor(Math.random() * h);
