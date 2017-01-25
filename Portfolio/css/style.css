@@ -84,10 +84,9 @@ background/white:#FFFFFF;
 	font-weight: bold;
 }
 
-#about, #portfolio, #contact{
+#about, #contact{
 	height: 100vh;
 	background-color: #DFE2DB;
-	/*margin-top: -42px;*/
 }
 
 #portfolio, #contact{
@@ -101,14 +100,7 @@ background/white:#FFFFFF;
 	padding-top: 50px;
 }
 
-#portfolio{
-  background-color: #191919;
-}
 
-.portfolio{
-  color:#660099;
-  padding-top: 50px;
-}
 
 
 
@@ -195,93 +187,7 @@ width:100px;
 }
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
-}
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #660099;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #660099;
-  font-size: 15px;
-  position: absolute;
-  font-weight: bold;
-  bottom:10px;
-  width: 200px;
-  left:10%;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #660099;
-  font-size: 12px;
-  padding: 8px 12px;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
     #about {
       box-sizing: border-box;
@@ -368,8 +274,68 @@ width:100px;
     }
 
 
+#portfolio{
+  background-color: #191919;
+}
+
+.portfolio{
+  color:#660099;
+  padding-top: 50px;
+}
+
+.grid{
+  padding:0;  
+  list-style: none;
+  max-width: 90%;
+  margin-top: 20px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+#portfolio img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    padding:10px;
+}
 
 
+/*.grid{
+  padding:0;
+  list-style: none;
+  max-width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  margin: 0 auto;
+}*/
+
+
+/*
+li {
+    height:100%;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    display:inline-flex;
+    display: list-item;
+    text-align: -webkit-match-parent;
+
+}
+*/
 
 
 
