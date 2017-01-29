@@ -83,20 +83,9 @@ background/white:#FFFFFF;
 }
 
 #about, #contact, #portfolio{
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #191919;
   color:#DFE2DB;
-}
-
-.testPage{
-	color:black;
-	padding-top: 50px;
-}
-
-h1{
-  margin:0;
-  padding:50px 5px 5px 5px;
-	font-size: 50px;
 }
 
 #menu{
@@ -111,28 +100,23 @@ h1{
 }
 
 #burgerToggle{
-	display: none;
 	position:fixed;
-	top:10px;
+	top:15px;
 	right: 15px;
 	border: 0;
-  text-indent: 200%;
   overflow: hidden;
   background: rgba(255,255,255,.8) url(../images/burger_icon.png) center no-repeat;
-  border: 1px solid #ddd;
   border-radius: 3px;
   background-size: 80%;
   width: 50px;
   height: 50px;
   outline: none;
   transition: all 400ms ease;
-
 }
 
 #burgerToggle.expanded{
 	transform: rotate(-90deg);
-	background-color: rgba(255,255,255,.2);
-  border:0;
+	background-color: rgba(255,255,255,.3);
 }
 
 .menuitem{
@@ -140,7 +124,6 @@ h1{
 	color:#DFE2DB;
 	padding: 10px;
 	cursor: pointer;
-	text-decoration: none;
 }
 
 .menuitem:hover{
@@ -186,8 +169,6 @@ font-size: 7.5em;
   cursor:pointer;
   text-align: center;
   align-items:center;
-  /* Safari transitionend event.propertyName === flex */
-  /* Chrome + FF transitionend event.propertyName === flex-grow */
   transition:
     font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
     flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
@@ -239,11 +220,6 @@ font-size: 7.5em;
   font-size:1.5em;
 }
 
-.cta {
-  color:white;
-  text-decoration: none;
-}
-
 .grid{
   padding:0;  
   list-style: none;
@@ -270,6 +246,24 @@ ul {
     padding:10px;
 }
 
+h1{
+  margin:0;
+  padding:50px 5px 5px 5px;
+  font-size: 50px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+  ul {
+      -moz-column-count: 1;
+      -moz-column-gap: 5px;
+      -webkit-column-count: 1;
+      -webkit-column-gap: 5px;
+      column-count: 1;
+      column-gap: 5px;
+  }
+}
 
 @media screen and (max-width: 580px) {
 	#menu{
