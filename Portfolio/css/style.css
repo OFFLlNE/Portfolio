@@ -250,7 +250,7 @@ width:100px;
 
     .panel > *:first-child { transform: translateY(-100%); }
     .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:nth-child(2) { transform: translateY(0); }
+    .panel > *:nth-child(2) { transform: translateY(0); font-family: 'Lobster', cursive; }
     .panel.open-active > *:nth-child(2) { transform: translateY(200%); }
 
 
