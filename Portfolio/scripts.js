@@ -10,7 +10,7 @@ $(document).ready(function() {
 function makeNewPosition($container) {
 
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $container.height() - 500;
+    var h = $container.height() - 550;
     var w = $container.width() - 150;
 
     var nh = Math.floor(Math.random() * h);
@@ -65,21 +65,30 @@ $('.menuitem').click(function(){
 
 
 
-
-
+//PANNEL DISPLAY
+var previous;
 const panels = document.querySelectorAll('.panel');
 
-    function toggleOpen() {
-      this.classList.toggle('open');
-    }
+$('.panel').on('click', function(){
+    if(previous == this){
+            $(previous).removeClass('open');
+            previous = undefined;    
+        }
+        else if(previous !== undefined){
+            $(previous).removeClass('open');
+            $(this).addClass('open');
+            previous = this;
+        }else{
+            $(this).addClass('open');
+            previous = this;
+        }    
+});
 
     function toggleActive(e) {
       if (e.propertyName.includes('flex')) {
         this.classList.toggle('open-active');
       }
     }
-
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 
