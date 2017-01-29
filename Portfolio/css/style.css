@@ -70,8 +70,8 @@ background/white:#FFFFFF;
     font-size: 1.3em;
     position: absolute;
     width: 200px;
-    height: 220px;
-    background: #DFE2DB;
+    height: 200px;
+    background: #191919;
     top: 50%;
     left: 50%;
     margin: -110px 0 0 -100px;
@@ -79,7 +79,7 @@ background/white:#FFFFFF;
     box-sizing: border-box;
     z-index: 100;
     text-align:center;
-	color:#191919;
+	color:#DFE2DB;
 	opacity: 1;
 	display: block;
 	font-weight: bold;
@@ -280,7 +280,7 @@ width:100px;
 }
 
 .portfolio{
-  color:#660099;
+  color:#DFE2DB;
   padding-top: 50px;
 }
 
