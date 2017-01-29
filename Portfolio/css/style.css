@@ -2,21 +2,20 @@
 body{
   margin:0;
   font:normal 75% Arial, Helvetica;
-} 
-
+  /*background-color:#191919;*/
+}
 
 canvas{
   display:block;
   vertical-align: bottom; 
 }
 
-/*My Main colors 
+/*
+My Main colors 
 dark: #191919;
 light:#DFE2DB;
 target:#660099;
 background/white:#FFFFFF;
-
-
 */
 /* ---- particles.js container ---- */ 
 #particles-js{
@@ -66,48 +65,37 @@ background/white:#FFFFFF;
 }
 
 .myPanel {
-    font-family: 'Roboto';
-    font-size: 1.3em;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: rgba(25,25,25,0.1);
-    top: 50%;
-    left: 50%;
-    margin: -110px 0 0 -100px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    z-index: 100;
-    text-align:center;
-	color:#DFE2DB;
-	display: block;
-	font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(25,25,25,0.1);
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  box-sizing: border-box;
+  z-index: 100;
+  text-align:center;
+  color:#DFE2DB;
+  display: block;
+  font-weight: bold;
 }
 
-#about, #contact{
+#about, #contact, #portfolio{
 	height: 100vh;
 	background-color: #191919;
   color:#DFE2DB;
 }
-
-h1{
-	margin:0;
-}
-
-
 
 .testPage{
 	color:black;
 	padding-top: 50px;
 }
 
-
-
-
-
-
 h1{
-  padding:5px;
+  margin:0;
+  padding:50px 5px 5px 5px;
 	font-size: 50px;
 }
 
@@ -122,35 +110,30 @@ h1{
 	padding-top: 5px;
 }
 
-
-
-
 #burgerToggle{
 	display: none;
 	position:fixed;
 	top:10px;
 	right: 15px;
 	border: 0;
-    text-indent: 200%;
-    overflow: hidden;
-    background: rgba(255,255,255,.8) url(../images/burger_icon.png) center no-repeat;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background-size: 80%;
-    width: 50px;
-    height: 50px;
-    outline: none;
-    transition: all 400ms ease;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255,.8) url(../images/burger_icon.png) center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  transition: all 400ms ease;
 
 }
 
 #burgerToggle.expanded{
 	transform: rotate(-90deg);
 	background-color: rgba(255,255,255,.2);
-    border: 0;
+  border:0;
 }
-
-
 
 .menuitem{
 	font-size: 30px;
@@ -160,15 +143,11 @@ h1{
 	text-decoration: none;
 }
 
-
-
 .menuitem:hover{
 	background-color: #191919;
 	color: #660099;
 	border-radius: 8px;
 }
-
-
 
 div#contactContainer {
   height:80vh;
@@ -179,116 +158,90 @@ div.a, div.b, div.c, div.d ,div.e {
 position:relative;
 width:100px;
 font-size: 7.5em;
-color:#660099;
-}
-a{color:#660099;}
-a:hover {
-     color:#660099;
-     text-decoration:none; 
-     cursor:pointer;  
 }
 
-
-
-.paddedH{
-  padding-top: 50px;
+#about {
+  box-sizing: border-box;
+  background:#ffc600;
+  font-family:'Roboto';
+  font-size: 1.5vw;
+  font-weight: 200;
+  overflow: hidden;
 }
-
-
-
-
-    #about {
-      box-sizing: border-box;
-      background:#ffc600;
-      font-family:'Roboto';
-      font-size: 1.5vw;
-      font-weight: 200;
-      overflow: hidden;
-    }
     
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-
-    .panels {
-      min-height:100vh;
-      display: flex;
-      overflow: hidden;
-    }
-
-    .panel {
-      background:#6B0F9C;
-      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
-      color:white;
-      text-align: center;
-      align-items:center;
-      /* Safari transitionend event.propertyName === flex */
-      /* Chrome + FF transitionend event.propertyName === flex-grow */
-      transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        background 0.2s;
-      font-size: 1.5vw;
-      background-size:cover;
-      background-position:center;
-      flex: 1;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-
-    .panel1 { background-image:url(http://i.imgur.com/2shdwke.jpg); }
-    .panel2 { background-image:url(http://img.mota.ru/upload/wallpapers/source/2010/11/15/09/01/23162/mota_ru_0111505.jpg); }
-    .panel3 { background-image:url(https://crossingzebras.com/wp-content/uploads/2016/04/skilltrading.jpg); }
-    .panel4 { background-image:url(http://wallpapercave.com/wp/qQvdEdD.jpg); }
-    .panel5 { background-image:url(https://danielphounsavan.files.wordpress.com/2013/10/rain_drops_keep_falling_wallpaper-wide.jpg); }
-
-    /* Flex Items */
-    .panel > * {
-      margin:0;
-      width: 100%;
-      transition:transform 0.5s;
-      flex: 1 0 auto;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .panel > *:first-child { transform: translateY(-100%); }
-    .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:nth-child(2) { transform: translateY(0);}
-    .panel.open-active > *:nth-child(2) { transform: translateY(200%); }
-
-
-    .panel p {
-      text-transform: uppercase;
-      font-family:'Roboto';
-      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 1.5em;
-    }
-    .panel p:nth-child(2) {
-      font-size: 2em;
-    }
-
-    .panel.open {
-      flex: 5;
-      font-size:1.5em;
-    }
-
-    .cta {
-      color:white;
-      text-decoration: none;
-    }
-
-
-#portfolio{
-  background-color: #191919;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.portfolio{
-  color:#DFE2DB;
-  padding-top: 50px;
+.panels {
+  min-height:100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.panel {
+  background:#6B0F9C;
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  color:white;
+  cursor:pointer;
+  text-align: center;
+  align-items:center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  font-size: 1.5vw;
+  background-size:cover;
+  background-position:center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel1 { background-image:url(http://i.imgur.com/2shdwke.jpg); }
+.panel2 { background-image:url(http://img.mota.ru/upload/wallpapers/source/2010/11/15/09/01/23162/mota_ru_0111505.jpg); }
+.panel3 { background-image:url(https://crossingzebras.com/wp-content/uploads/2016/04/skilltrading.jpg); }
+.panel4 { background-image:url(http://wallpapercave.com/wp/qQvdEdD.jpg); }
+.panel5 { background-image:url(https://danielphounsavan.files.wordpress.com/2013/10/rain_drops_keep_falling_wallpaper-wide.jpg); }
+
+/* Flex Items */
+.panel > * {
+  margin:0;
+  width: 100%;
+  transition:transform 0.5s;
+  flex: 1 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+.panel.open-active > *:first-child { transform: translateY(0); }
+.panel > *:nth-child(2) { transform: translateY(0);}
+.panel.open-active > *:nth-child(2) { transform: translateY(200%); }
+
+.panel p {
+  text-transform: uppercase;
+  font-family:'Roboto';
+  text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1.5em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 2em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size:1.5em;
+}
+
+.cta {
+  color:white;
+  text-decoration: none;
 }
 
 .grid{
@@ -318,75 +271,43 @@ ul {
 }
 
 
-/*.grid{
-  padding:0;
-  list-style: none;
-  max-width: 90%;
-  margin-top: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  -webkit-box-align: start;
-  align-items: flex-start;
-  margin: 0 auto;
-}*/
-
-
-/*
-li {
-    height:100%;
-    text-transform:uppercase;
-    font-weight:bold;
-    letter-spacing:2px;
-    display:inline-flex;
-    display: list-item;
-    text-align: -webkit-match-parent;
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 580px) {
 	#menu{
 		background-color: rgba(34,34,34,0);
 	}
+
 	#burgerToggle{
 		display: block;
 	}
+
   .hidden{
     display:block;
   }
+
   .menuitem{
     display:none;
     width: 100%;
-	text-align: center;
+	  text-align: center;
   }
+
   .notHidden{
 	display:block;
 	background-color: rgba(34,34,34,0.5);
   }
+
   .paddedH{
   padding-top: 5px;
   font-size: 16px;
   }
+
   div.a, div.b, div.c, div.d ,div.e {
     position:relative;
     width:50px;
   }
+
   .smallLogo{
     width: 50px;
-  } 
-    
+  }  
 }
 
 
