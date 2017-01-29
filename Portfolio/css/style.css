@@ -86,7 +86,8 @@ background/white:#FFFFFF;
 
 #about, #contact{
 	height: 100vh;
-	background-color: #DFE2DB;
+	background-color: #191919;
+  color:#DFE2DB;
 }
 
 #portfolio, #contact{
@@ -168,9 +169,6 @@ h1{
 }
 
 
-.smallLogo{
-  width: 100px;
-}
 
 div#contactContainer {
   height:80vh;
@@ -180,7 +178,10 @@ div#contactContainer {
 div.a, div.b, div.c, div.d ,div.e {
 position:relative;
 width:100px;
+font-size: 7.5em;
 }
+
+
 
 .paddedH{
   padding-top: 50px;
