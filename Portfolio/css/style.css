@@ -238,11 +238,11 @@ a:hover {
     }
 
 
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/1CD3fd8kHnE/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+    .panel1 { background-image:url(http://i.imgur.com/2shdwke.jpg); }
+    .panel2 { background-image:url(http://img.mota.ru/upload/wallpapers/source/2010/11/15/09/01/23162/mota_ru_0111505.jpg); }
+    .panel3 { background-image:url(https://crossingzebras.com/wp-content/uploads/2016/04/skilltrading.jpg); }
+    .panel4 { background-image:url(http://wallpapercave.com/wp/qQvdEdD.jpg); }
+    .panel5 { background-image:url(https://danielphounsavan.files.wordpress.com/2013/10/rain_drops_keep_falling_wallpaper-wide.jpg); }
 
     /* Flex Items */
     .panel > * {
