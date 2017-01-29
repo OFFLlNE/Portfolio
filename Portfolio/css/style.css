@@ -100,6 +100,7 @@ background/white:#FFFFFF;
 }
 
 #burgerToggle{
+	display: none;
 	position:fixed;
 	top:15px;
 	right: 15px;
@@ -124,6 +125,7 @@ background/white:#FFFFFF;
 	color:#DFE2DB;
 	padding: 10px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .menuitem:hover{
