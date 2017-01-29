@@ -250,13 +250,13 @@ width:100px;
 
     .panel > *:first-child { transform: translateY(-100%); }
     .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:nth-child(2) { transform: translateY(0); font-family: 'Lobster', cursive; }
+    .panel > *:nth-child(2) { transform: translateY(0);}
     .panel.open-active > *:nth-child(2) { transform: translateY(200%); }
 
 
     .panel p {
       text-transform: uppercase;
-      font-family: 'Roboto';
+      font-family: 'Lobster', 'Roboto', cursive;
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: 1.5em;
     }
